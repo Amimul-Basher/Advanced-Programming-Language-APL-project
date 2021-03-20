@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "iGraphics", "iGraphics.exe", "{E6AAEF9C-E6EB-498E-97D2-2704CC3439C8}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\amimu\Desktop\iGraphics\iGraphics\Debug\iGraphics.exe
+		RemoteMachine = DESKTOP-847GI7P
+		StartingDirectory = C:\Users\amimu\Desktop\iGraphics\iGraphics\Debug
+		Environment = Default
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6AAEF9C-E6EB-498E-97D2-2704CC3439C8}.Debug|x86.ActiveCfg = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

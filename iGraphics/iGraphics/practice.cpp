@@ -1,0 +1,157 @@
+/*
+Original Author: S. M. Shahriar Nirjon
+Last Modified by: Mohammad Saifur Rahman
+last modified: October 13, 2015
+Version: 2.0
+*/
+
+# include "iGraphics.h"
+int mposx, mposy;
+int screenheight = 600; 
+int screenwidth = 800;
+
+int x = 200;
+int y = 50;
+
+
+/*
+function iDraw() is called again and again by the system.
+*/
+
+
+   
+
+void iDraw()
+{
+	//place your drawing codes here
+	iClear();
+
+	iSetColor(255, 250, 0);
+	iFilledRectangle(x, y, 400, 300);
+
+	iSetColor(0, 0, 0);
+	iFilledRectangle(x+150, y+10, 100, 250);
+
+	iSetColor(255, 255, 255);
+	iFilledRectangle(x+150, y+10, 40, 250);
+	
+
+	iSetColor(0, 0, 0);
+	iFilledRectangle(x+50, y+150, 50, 50);
+	iSetColor(255, 255, 255);
+	iFilledRectangle(x + 50, y + 150, 20, 50);
+	
+	iSetColor(0, 0, 0);
+	iFilledRectangle(x + 300, y + 150, 50, 50);
+	iSetColor(255, 255, 255);
+	iFilledRectangle(x + 300, y + 150, 20, 50);
+
+	
+	
+
+	
+
+	iSetColor(255, 255, 255);
+	iLine(x - 50, y + 300, x + 450, y + 300);
+	iLine(x - 50, y + 300, x+ 200, y + 500);
+	iLine(x + 200, y + 500, x + 450, y + 300);
+
+	printf("%d  %d\n", x, y);
+
+	
+}
+
+
+
+
+/*
+function iMouseMove() is called when the user presses and drags the mouse.
+(mx, my) is the position where the mouse pointer is.
+*/
+void iMouseMove(int mx, int my)
+{
+	x = mx - 200;
+	y = my - 150;
+}
+
+/*
+function iMouse() is called when the user presses/releases the mouse.
+(mx, my) is the position where the mouse pointer is.
+*/
+void iMouse(int button, int state, int mx, int my)
+{
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+	{
+		//x = mx-200;
+		//y = my -150;
+	}
+	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN)
+	{
+		//place your codes here
+	}
+}
+/*iPassiveMouseMove is called to detect and use
+the mouse point without pressing any button */
+
+void iPassiveMouseMove(int mx, int my)
+{
+	//place your code here
+
+	mposx = mx;
+	mposy = my;
+	if (mx == 2){}        /*Something to do with mx*/
+	else if (my == 2){}   /*Something to do with my*/
+
+}
+
+/*
+function iKeyboard() is called whenever the user hits a key in keyboard.
+key- holds the ASCII value of the key pressed.
+*/
+void iKeyboard(unsigned char key)
+{
+	if (key == 'w')
+	{
+		y += 10;
+	}
+	else if (key == 's')
+	{
+		y -= 10;
+	}
+	else if (key == 'a')
+	{
+		x -= 10;
+	}
+	else if (key == 'd')
+	{
+		x += 10;
+	}
+	
+}
+
+/*
+function iSpecialKeyboard() is called whenver user hits special keys like-
+function keys, home, end, pg up, pg down, arraows etc. you have to use
+appropriate constants to detect them. A list is:
+GLUT_KEY_F1, GLUT_KEY_F2, GLUT_KEY_F3, GLUT_KEY_F4, GLUT_KEY_F5, GLUT_KEY_F6,
+GLUT_KEY_F7, GLUT_KEY_F8, GLUT_KEY_F9, GLUT_KEY_F10, GLUT_KEY_F11, GLUT_KEY_F12,
+GLUT_KEY_LEFT, GLUT_KEY_UP, GLUT_KEY_RIGHT, GLUT_KEY_DOWN, GLUT_KEY_PAGE UP,
+GLUT_KEY_PAGE DOWN, GLUT_KEY_HOME, GLUT_KEY_END, GLUT_KEY_INSERT
+*/
+void iSpecialKeyboard(unsigned char key)
+{
+	if (key == GLUT_KEY_RIGHT)
+		exit(0);
+	//place your codes for other keys here
+}
+//
+int main()
+{
+	//place your own initialization codes here.
+
+	
+	iInitialize(screenwidth, screenheight, "Bashar");
+
+
+	return 0;
+}

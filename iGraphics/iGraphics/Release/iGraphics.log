@@ -1,0 +1,16 @@
+﻿Build started 3/16/2021 11:57:26 PM.
+     1>Project "C:\Users\amimu\Desktop\iGraphics\iGraphics\iGraphics\iGraphics.vcxproj" on node 2 (Build target(s)).
+       Project file contains ToolsVersion="12.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt iMain.cpp
+         iMain.cpp
+     1>c:\users\amimu\desktop\igraphics\igraphics\igraphics\iGraphics.h(107): error C2664: 'auxDIBImageLoadW' : cannot convert parameter 1 from 'char []' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>iMain.cpp(77): error C2864: 'rec::beeExistence' : only static const integral data members can be initialized within a class
+     1>iMain.cpp(78): error C2864: 'rec::beeMoveF' : only static const integral data members can be initialized within a class
+     1>iMain.cpp(79): error C2864: 'rec::beeMoveB' : only static const integral data members can be initialized within a class
+     1>Done Building Project "C:\Users\amimu\Desktop\iGraphics\iGraphics\iGraphics\iGraphics.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.19
